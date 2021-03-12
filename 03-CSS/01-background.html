@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background : css</title>
+</head>
+<body>
+    <h1>css background</h1>
+    <h2>1. background-color</h2>
+    <ul class="bg-c">
+        <li>background-color : tomato</li>
+        <li>background-color : hex</li>
+        <li>background-color : rgb</li>
+        <li>background-color : rgba</li>
+    </ul>
+    <style>
+        .bg-c li:first-child{
+            background-color: tomato;
+        }
+        .bg-c li:nth-child(2){
+            background-color: #ff6347;
+        }
+        /* hex */
+        .bg-c li:nth-child(3) {
+            background-color: rgb(255,99,71);
+            border: 5px solid red;
+            opacity : 0.5
+        /* 통째로 opacity : font-color, border, bgc */
+        }
+        /* rgb */
+        .bg-c li:last-child {
+            background-color: rgba(255,99,71,0.5);
+        /* 투명도 넣을때 rgba로 넣음, 기본값은 1, bgc에만 투명도가 들어감*/
+        border: 5px solid red;
+        }
+    </style>
+
+    <hr>
+    <h2>2. background-images</h2>
+
+    <h1 class="logo">
+        <a href="#">네이버</a>
+        <!-- 매일 바뀌는 이미지가 아니므로 bgi로 깔아주면 됨 -->
+    </h1>
+
+    <style>
+        .logo a{
+            display: block;
+            height: 320px;width: 830px;
+            background-image: url(./images/logo-naver1.gif);
+            text-indent: -9999px;
+        }
+    </style>
+    
+    <hr>
+    <h2>3.background-repeat</h2>
+
+
+</body>
+</html>
