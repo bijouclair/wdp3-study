@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+*{
+    margin: 0;padding: 0;
+    line-height: 1.5;font-size: 14px;color: #333333;
+    text-decoration: none;list-style: none;
+    box-sizing: border-box;
+}
+
+.blind{
+    font-size: 0;line-height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.wrap {
+    width: 1200px;margin: 0 auto;
+    background-color: #eee;
+    
+}
+
+header{
+    display: flex; justify-content: space-between;
+    height: 100px;background-color: #fff;
+}
+
+.logo a{
+    display: block;
+    height: 100px;width: 140px;
+    background: url(../images/logo-kakaoi.svg) 0 50% no-repeat;
+    text-indent: -9999px;
+}
+
+nav{
+    width: 40%;
+    display: flex;align-items: center;
+    margin-right: -40px;
+}
+
+.nav-depth1{
+    display: flex;justify-content: space-between;
+    width: 100%;
+}
+
+.nav-depth1>li>a {
+    display: block;
+    height: 100px;
+    margin: 50px 0 ; padding: 40px;
+}
+
+.nav-depth2{
+    display: none;
+}
+
+.lst-slide{
+    display: flex;
+}
+
+.container{
+    display: flex;justify-content: space-between;
+}
+.container .tab, .container>section {
+    width: 30%;
+}
+
+.sec-bbs a{
+    display: block;
+    padding: 7px 0;
+    white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+}
+
+.sec-bbs a::before {
+    display: inline-block;
+    content: '';
+    width: 5px;height: 5px;
+    margin: -5px 5px 0 0;
+    background: red;
+    vertical-align: middle;
+}
+.sec-gallery ul {
+    display: flex; justify-content: space-between;   
+}
+
+.sec-gallery li{
+    width: 30%;
+}
+.sec-gallery img{
+    width: 100%;
+}
+
+.sec-bnr img{
+    width: 100%;
+}
+
+.sec-goto .cont {
+    display: flex; align-items: center;
+    height: 100%;
+  }
+  .sec-goto a {
+    display: block;
+    height: 50px; padding-left: 60px;
+    line-height: 50px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+.sec-goto li:first-child a{background-image: url(../images/ico-goto1.png);}
+.sec-goto li:nth-child(2) a{background-image: url(../images/ico-goto2.png);}
+.sec-goto li:nth-child(3) a{background-image: url(../images/ico-goto3.png);}
+.sec-goto li:last-child a{background-image: url(../images/ico-goto4.png) ;}
+
+.sec-goto ul{
+    display: flex; justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sec-goto li{
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex; justify-content: space-between;
+    background-color: #999;
+}
+
+
+
