@@ -106,7 +106,8 @@ nav{
 /* goto */
 .sec-goto a{
     display: block;
-    height: 50px; padding-left: 60px; line-height:50px; /* line-height 높이값 만큼 넣으면 가운데 정렬 됨 */
+    height: 50px;padding-left: 60px;line-height: 50px;
+    /* line-height 높이값 만큼 넣으면 가운데 정렬 됨 */
     background-position: 0 0;
     background-repeat: no-repeat;
 }
@@ -122,33 +123,35 @@ nav{
 .sec-goto li:last-child a{
     background-image: url(../images/ico-goto4.png);
 }
-.sec-goto .lst-goto {
-    display: flex;flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .lst-goto li {
-    width: 40%; 
+.sec-goto .lst-goto{
+    display: flex;justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lst-goto li{
+    width: 40%;
     margin-bottom: 20px;
-  }
+}
+.sec-goto .cont{
+    height: 100%;
+    display: flex;align-items: center;
+}
+
 /* footer */
-footer{
-    display: flex;justify-content: space-between;   ``
+
+footer {
+    display: flex; justify-content: space-between;
     background-color: #999;
-    width: 100%;
-}
-footer .logo{
-    margin: 10px;
-}
-.copyright {
-    padding:50px; /* margin-top:40px도 가능 */
-    color: white;
-}
-.lst-sns{
-    margin-top: 20px;
+  }
+  .copyright {
+    margin-top: 40px;
+    color: #fff;
+  }
+  .lst-sns {
     display: flex;
-}
-.lst-sns a{
+    margin-top: 20px;
+  }
+  .lst-sns a {
     display: block;
-    padding: 20px;
-    color:white;
-}
+    padding: 20px; color: #fff;
+  }
