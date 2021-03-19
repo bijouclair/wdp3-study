@@ -5,13 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>float : css</title>
-    <style>
-        *{
-        margin: 0;padding: 0;
-        font-size: 14px;line-height: 1.5;color: #000;
-        box-sizing: border-box;text-decoration: none;list-style: none;
-        }
-    </style>
+    <link rel="stylesheet" href="./CSS/comm.css">
+
 </head>
 <body>
     <!-- <h1>float</h1> -->
@@ -19,60 +14,54 @@
 
     <header>
         <h1>logo</h1>
-        <nav>nav</nav>
+        <nav id="gnb">
+            <ul class="nav-depth1">
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+            </ul>
+        </nav>
+        <div class="lang">
+            <ul class="lst-lang">
+                <li><a href="#">KOR</a></li>
+                <li><a href="#">ENG</a></li>
+            </ul>
+        </div>
     </header>
     <div class="container">
-        <main>메인</main>
+        <main>
+            <ul class="lst-shop" >
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+            </ul>
+            <ul class="lst-shop2">
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">메인</a></li>
+            </ul>
+        </main>        
         <aside>사이드</aside>
     </div>
     <footer class="clearfix">
         <h1>logo</h1>
         <div class="copyright">copyright</div>
+        <div class="sns">sns</div>
     </footer>
 
-    <style>
-        header {
-            height: 100px; /* 1.엄마에게 높이값을 넣어준다 */
-            background-color:#eee;
-            /* padding: 20px; */
-        }
-        h1 {
-            background-color:tomato;
-            float:left
-        }
-        nav{
-            background-color:lightblue;
-            float: right;
-        }
-        .container{
-            overflow: hidden; /* 2.높이값을 넣을 수 없는 영역에는 overflow 속성을 넣어준다. */
-            background-color:purple;
-        }
-        main {
-            background-color: rgb(57, 176, 255);
-            height: 200px;
-            float: left;
-        }
-        aside{
-            background-color: rgb(252, 140, 140);
-            height: 200px;
-            float: right;
-        }
-        footer{
-            background-color: rgb(97, 96, 96);
-        }
-        .copyright{
-            background-color: rgb(255, 253, 117);
-            float:left;
-        }
-
-        /* 3. clearfix 처리 */
-        .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-        }
-    </style>
   
 </body>
 </html>
