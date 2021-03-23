@@ -38,10 +38,6 @@ nav{
     /* width: 40%;  */
     /* margin-right: -40px; */
 }
-nav:hover .nav-depth2, nav:hover .nav-bg{
-    display: block;
-}
-
 
 .nav-depth1{
     display: flex; justify-content: space-between; 
@@ -62,12 +58,24 @@ nav:hover .nav-depth2, nav:hover .nav-bg{
     color:tomato;
     border-bottom: 3px solid tomato;
 }
+
+/* mouse-out */
 .nav-depth2 {
-    display: none;
+    overflow: hidden;
+    /* display: none; */
     position: absolute; top: 100px;left: 0;
     z-index: 100;
-    width: 100%;padding-top: 10px;
+    width: 100%; padding-top: 0; height: 0;
     /* background-color: rgba(255, 255, 255, 0.5); */
+    transition: .5s;
+}
+
+/* mouse-over */
+nav:hover .nav-depth2, nav:hover .nav-bg{
+    height: 135px;
+    background-color: #fff;
+    padding: 10px;
+
 }
 
 .nav-depth2 a{
@@ -82,12 +90,13 @@ nav:hover .nav-depth2, nav:hover .nav-bg{
 }
 
 .nav-bg{
-    display: none;
+    /* display: none; */
     position: absolute; top: 100px;left: 0;
     z-index: 99;
-    width:100%;height: 130px;
-    background-color: rgba(252, 252, 252); 
+    width:100%; height: 0;
+    /* background-color: rgba(252, 252, 252, 0);  */
     border-top: 1px solid rgb(252, 8, 8);
+    transition: all .5s;
 }
 
 .slide {
